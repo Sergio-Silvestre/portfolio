@@ -23,6 +23,10 @@
     --scrollbar-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scrollbar-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
+    /* Glass color*/
+    --glass-color: rgba(255, 255, 255, 0.25);
+    --glass-color-hover: rgba(255, 255, 255, 1);
+
     /*========== Font and typography ==========*/
     --body-font: 'Poppins', sans-serif;
 
@@ -80,6 +84,10 @@ body.dark-theme{
     --container-color: hsl(var(--hue-color), 29%, 16%);
     --scrollbar-bar-color: hsl(var(--hue-color), 12%, 48%);
     --scrollbar-thumb-color: hsl(var(--hue-color), 12%, 36%);
+
+    /* Glass color*/
+    --glass-color: rgba(255, 0, 0, 0.25);
+    --glass-color-hover: rgba(0, 0, 0, 1);
 }
 
 /*========== Button Dark/Light ==========*/
@@ -173,12 +181,14 @@ img{
     position: fixed;
     bottom: 0;
     left: 0;
-    z-index: var(--z-fixed);
-    /*ajustar rem  para efecto del blur*/    
-    background-color: rgba( 255, 0, 0, 0.25 );
+    z-index: var(--z-fixed);    
+    background-color: var(--glass-color);
     backdrop-filter: blur( 0.2 rem );
-    -webkit-backdrop-filter: blur( 0.2rem  );
+    -webkit-backdrop-filter: blur( 0.2 rem  );
+}
 
+.header:hover{
+    background-color: var(--glass-color-hover);
 }
 
 /*==================== NAV ====================*/
@@ -220,10 +230,6 @@ img{
         box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
         border-radius: 1.5rem 1.5rem 0 0;
         transition: .3s;
-        /*ajustar rem  para efecto del blur*/    
-        background-color: rgba( 255, 0, 0, 0.25 );
-        backdrop-filter: blur( 0.2 rem );
-        -webkit-backdrop-filter: blur( 0.2rem  );
     }
 }
 
