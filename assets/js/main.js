@@ -148,10 +148,47 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
-/*==================== Animated home ====================*/
+/*==================== ANIMATED HOME ====================*/
 let tl = gsap.timeline();
+
+tl.from(".home__bg",{
+    stagger: 0.2,
+    opacity: 0,
+    x: 20
+});
+
+tl.from(".home__img",{
+    stagger: 0.2,
+    opacity: 0,
+    y: -20
+});
+
+tl.from(".home__title",{
+    stagger: 0.2,
+    opacity: 0,
+    y: -20
+});
+
+tl.from(".home__subtitle",{
+    stagger: 0.2,
+    opacity: 0,
+    y: 20
+});
+
 tl.from(".home__social-icon",{
     stagger: 0.2,
     opacity: 0,
     x: -20
+});
+
+tl.from(".home__button",{
+    stagger: 0.2,
+    opacity: 0,
+    x: -20
+});
+
+tl.from(".home__scroll",{
+    stagger: 0.2,
+    opacity: 0,
+    y: 20
 });
