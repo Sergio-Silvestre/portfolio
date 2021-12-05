@@ -147,3 +147,11 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+/*==================== Animated home ====================*/
+let tl = gsap.timeline();
+tl.from(".home__social-icon",{
+    stagger: 0.2,
+    opacity: 0,
+    x: -20
+});

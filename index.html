@@ -66,7 +66,6 @@
                 <div class="nav__btns">
                     <!-- Theme change button -->
                     <i class="uil uil-moon change-theme" id="theme-button"></i>
-
                     <div class="nav__toggle" id="nav-toggle">
                         <i class="uil uil-apps"></i>
                     </div>
@@ -106,7 +105,7 @@
                     </div>
                     <div class="home__scroll">
                         <a href="#about" class="home__scroll-button button--flex">
-                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                            <i class="uil uil-mouse home__scroll-mouse"></i>
                             <span class="home__scroll-name">Más información</span>
                             <i class="uil uil-arrow-down home__scroll-arrow"></i>
                         </a>
@@ -493,6 +492,9 @@
                             <label for="" class="contact__label">Mensaje</label>
                             <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
                         </div>
+                        <div class="field">
+                            <div data-netlify-recaptcha="true"></div>
+                        </div>
                         <div>
                             <!--sino funciona el submit cambiar a button, input u otra cosa-->
                             <a href="#" class="button button--flex contact__button" type="submit">
@@ -546,6 +548,9 @@
 
         <!--==================== SWIPER JS ====================-->
         <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--==================== ANIMATED JS ====================-->
+        <script src="assets/js/gsap.min.js"></script>
 
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>

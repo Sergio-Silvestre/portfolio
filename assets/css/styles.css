@@ -87,7 +87,7 @@ body.dark-theme{
 
     /* Glass color*/
     --glass-color: rgba(255, 0, 0, 0.25);
-    --glass-color-hover: rgba(0, 0, 0, 1);
+    --glass-color-hover: rgb(70, 0, 0);
 }
 
 /*========== Button Dark/Light ==========*/
@@ -424,6 +424,12 @@ img{
     border-radius: .5rem;
     justify-self: center;
     align-self: center;
+}
+
+.about__img:hover{
+    transform: rotate(15deg) scale(1.1);
+    z-index: 10;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .192);
 }
 
 .about_description{
