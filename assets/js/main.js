@@ -154,7 +154,7 @@ let tl = gsap.timeline();
 tl.from(".home__bg",{
     stagger: 0.2,
     opacity: 0,
-    x: 20
+    x: 100
 });
 
 tl.from(".home__img",{
@@ -197,7 +197,7 @@ tl.from(".home__scroll",{
 /*==================== ANIMATED TEXT ====================*/
  var typed = new Typed(".home__title-name",{
     strings: ["Mario!","Sergio!"],
-    startDelay: 2200,
+    startDelay: 2100,
     typeSpeed: 100,
     backSpeed: 60,
  });
