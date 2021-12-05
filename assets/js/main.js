@@ -172,7 +172,8 @@ tl.from(".home__title",{
 tl.from(".home__subtitle",{
     stagger: 0.2,
     opacity: 0,
-    y: 20
+    y: 20,
+    delay: 4
 });
 
 tl.from(".home__social-icon",{
@@ -192,3 +193,11 @@ tl.from(".home__scroll",{
     opacity: 0,
     y: 20
 });
+
+/*==================== ANIMATED TEXT ====================*/
+ var typed = new Typed(".home__title-name",{
+    strings: ["Mario!","Sergio!"],
+    startDelay: 2200,
+    typeSpeed: 100,
+    backSpeed: 60,
+ });

@@ -330,6 +330,14 @@ img{
     margin-bottom: var(--mb-1-5);
 }
 
+.home__title-name{
+    color: var(--first-color);
+}
+
+.typed-cursor {
+    color: var(--first-color);
+}
+
 .home__subtitle{
     font-size: var(--h3-font-size);
     color: var(--text-color);
