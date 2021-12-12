@@ -827,6 +827,13 @@ img{
     color: #fff;
 }
 
+.footer__copy{
+    font-size: var(--smaller-font-size);
+    text-align: center;
+    color: var(--text-color-light);
+    margin-top: var(--mb-3);
+}
+
 /*========== SCROLL UP ==========*/
 .scrollup{
     position: fixed;
