@@ -310,15 +310,17 @@ img{
 }
 
 .home__bg{
-    background-color: var(--first-color-second);
+    background-color: var(--first-color);
     padding-top: 1.5rem;
-    width: max-content;
+    width: auto;
+    height: auto;
+    max-width: 200px;
     border-radius: 1rem;
 }
 
 .home__img{
-    width: 10.5rem;
-    height: 7.4rem;
+    width: 100%;
+    object-fit: cover;
     justify-self: center;
 }
 
@@ -701,6 +703,10 @@ img{
     margin-bottom: var(--mb-0-75);
 }
 
+.portofolio__description-technology{
+    color: var(--first-color);
+}
+
 .portfolio__button:hover .button__icon{
     transform: translateX(.25rem);
 }
@@ -1010,7 +1016,7 @@ img{
     }
 
     .home__container-img{
-        background-color: var(--first-color-second);
+        background-color: var(--first-color);
         width: 300px;
         height: 229px;
         border-radius: 1rem;
@@ -1092,6 +1098,10 @@ img{
     .home__container-img{
         width: 380px;
         height: 310px;
+    }
+
+    .home__bg{
+        max-width: 400px;
     }
     
     .home__img{
