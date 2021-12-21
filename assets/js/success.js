@@ -1,3 +1,4 @@
+/* Back to the home page */
 (function () {
     if (
       document.referrer &&
